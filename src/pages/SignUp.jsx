@@ -3,10 +3,7 @@ import { Form, Button, Container } from "react-bootstrap";
 import { api } from "../api/api";
 import axios from "axios";
 import signUpImg from "../assets/images/signup.jpg";
-import Icon from "../components/Icon";
-import GoogleIcon from "../assets/icons/google.svg";
-import LinkedInIcon from "../assets/icons/linkedin.svg";
-import GitHubIcon from "../assets/icons/github.svg";
+import SocialsSignIn from "../components/SocialsSignIn";
 
 const initialState = {
   name: "",
@@ -75,11 +72,7 @@ const SignUp = () => {
           </Button>
         </Form>
         <span className="text-center my-4">or</span>
-        <div className="mx-auto w-25 d-flex justify-content-between">
-          <Icon icon={GoogleIcon} alt="google" />
-          <Icon icon={LinkedInIcon} alt="linkedin" />
-          <Icon icon={GitHubIcon} alt="github" />
-        </div>
+        <SocialsSignIn />
       </div>
     </Container>
   );
