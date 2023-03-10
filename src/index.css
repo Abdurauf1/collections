@@ -1,6 +1,14 @@
-body {
+@font-face {
+  font-family: ubuntu;
+  src: url(./assets/fonts/Ubuntu/Ubuntu-Medium.ttf);
+}
+
+* {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: ubuntu;
+}
+
+body {
   overflow-x: hidden;
 }
