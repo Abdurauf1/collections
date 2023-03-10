@@ -1,23 +1,35 @@
 import React from "react";
-import Icon from "../components/Icon";
+import Icon from "./SocialIcon";
 import GoogleIcon from "../assets/icons/google.svg";
 import LinkedInIcon from "../assets/icons/linkedin.svg";
 import GitHubIcon from "../assets/icons/github.svg";
 
 const SocialsSignIn = () => {
+  const linkStyles = {
+    width: "3rem",
+  };
   return (
-    <div className="mx-auto w-100">
-      <a className="d-block w-100 border p-2 mb-1" href="#">
+    <div className="d-flex">
+      <a
+        className="p-1 rounded-circle d-flex align-items-center justify-content-center bg-light"
+        style={linkStyles}
+        href=""
+      >
         <Icon icon={GoogleIcon} alt="google" />
-        <span>Sign in with Google</span>
       </a>
-      <a className="d-block w-100 border p-2 mb-1" href="#">
+      <a
+        className="p-1 rounded-circle d-flex align-items-center justify-content-center bg-light"
+        style={linkStyles}
+        href=""
+      >
         <Icon icon={LinkedInIcon} alt="linkedin" />
-        <span>Sign in with LinkedIn</span>
       </a>
-      <a className="d-block w-100 border p-2 mb-1" href="#">
+      <a
+        className="p-1 rounded-circle d-flex align-items-center justify-content-center bg-light"
+        style={linkStyles}
+        href=""
+      >
         <Icon icon={GitHubIcon} alt="github" />
-        <span>Sign in with GitHub</span>
       </a>
     </div>
   );
